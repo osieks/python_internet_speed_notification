@@ -8,9 +8,11 @@ st = speedtest.Speedtest()
 output = ""
 
 output = output + "Download: " + str(st.download()/1000/1000)+ " Mbit\n"
+#output = output + "Download: " + str(st.download()/1024/1024)+ " Mbit\n"
 print(output)
 
 output = output+ "Upload: " + str(st.upload()/1000/1000) + " Mbit\n"
+#output = output+ "Upload: " + str(st.upload()/1024/1024) + " Mbit\n"
 print(output)
 
 servernames =[]     
